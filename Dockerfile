@@ -11,7 +11,7 @@ RUN mvn clean install -DskipTest=true
 
 # ------------ Stage 2 ------------#
 
-From openjdk:17-alpine
+FROM eclipse-temurin:17-jdk-alpine
 
 COPY --from=builder /src/target/*.jar /src/target/bankapp.jar
 
