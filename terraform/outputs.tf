@@ -1,3 +1,4 @@
+
 output "arn" {
   value = aws_instance.testinstance.arn
 }
