@@ -1,4 +1,3 @@
-
 data "aws_ami" "os_image" {
   owners = ["099720109477"]
   most_recent = true
@@ -75,4 +74,3 @@ resource "aws_instance" "testinstance" {
     volume_type = "gp3"
   }
 }
-
